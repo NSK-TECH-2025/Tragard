@@ -1,0 +1,24 @@
+.text-orange{
+    color: #1268b3;
+  font-weight:bolder;
+  font-size: 19px;
+}
+.icons a{
+  color: rgb(3, 3, 3);
+  font-size:25px;
+  margin-right: 10px;
+}
+.flink a, .total p{
+line-height: 25px;
+font-size: small;
+color: rgb(85, 79, 79);
+text-decoration: none;
+font-weight:normal;
+}
+.flink a:hover{
+  color: #1268b3;;
+  transition: 0.5s;
+}
+.flink li{
+  padding-top: 6px;
+}

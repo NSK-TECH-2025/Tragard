@@ -1,0 +1,90 @@
+.serv {
+    background: url(https://cdn.vectorstock.com/i/1000v/64/56/astrology-horizontal-star-universe-background-vector-34716456.avif);
+}
+
+.serv h1 {
+    letter-spacing: 3px;
+}
+
+.title {
+    font-weight: 800;
+}
+
+.line {
+    width: 40px;
+    border-bottom: 2px solid rgb(0, 132, 255);
+}
+
+.content {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+.arowlogo{
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    
+}
+.arow-btn{
+    opacity:0%; 
+}
+/* Arrow Container */
+.arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+    color: white;
+    z-index: 2;
+    overflow: hidden;
+}
+
+/* Expanding Background for Arrow */
+.arrow::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #4fa5a5;
+    border-bottom-left-radius: 50px;
+    transition: all 0.4s ease-in-out;
+    z-index: -1;
+}
+
+/* Expand Arrow Background on Hover */
+.content:hover .arrow::before {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Ensure Text and Icon Stay Visible */
+.content:hover .arrow  {
+    color: white;
+    width: 100%;
+    height: 100%;
+    opacity: 100%;
+    border-radius: 0%;
+    z-index: 5;
+}
+.content:hover .arow-btn{
+    opacity: 100%;
+}

@@ -1,0 +1,54 @@
+body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1050;
+  }
+  .mobile-menu.show {
+    transform: translateX(0);
+  }
+  
+  /* Overlay to prevent white screen */
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Add some transparency */
+    z-index: 1049;
+  }
+  
+  /* Hide overflow when menu opens */
+  body.menu-open {
+    overflow: hidden;
+  }
+  .mobile-menu li{
+    color: rgb(54, 48, 48);
+    border-bottom: 1px solid rgb(41, 36, 36);
+  }
+  .nav-link{
+    font-weight: 500;
+    color: #1268b3;
+  }
+  .nav-icons a{
+    background-color: #1268b3;
+    color: white;
+    border-radius: 50%;
+    font-size:20px;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    padding: 2px;
+  }
+  

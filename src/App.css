@@ -1,0 +1,27 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* ✅ No horizontal scroll */
+  width: 100%;
+}
+.bform label{
+letter-spacing: 1px;
+font-size: small;
+font-weight: 600
+}
+.bform input, .bform select, .bform textarea{
+   border: 1px solid rgb(154, 181, 240);
+}
+.bform input:active, select:active{
+  border:0;
+  outline: none;
+}
+.blu{
+  color: #1268b3;
+}
+@media (max-width: 640px) { /* Small screens */
+  .total {
+    text-align: center;
+  }
+}

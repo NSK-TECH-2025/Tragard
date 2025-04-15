@@ -1,0 +1,17 @@
+.zoom {
+    display: inline-block;
+    animation: zoomInOut 2s infinite ease-in-out; 
+    color:#1268b3;
+}
+@keyframes zoomInOut {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.04); }
+    100% { transform: scale(1); }
+}
+.abt_ul{
+    font-size: small;
+    line-height: 23px;
+}
+.abtsec2{
+    background-color: #276daa;
+}
